@@ -1,0 +1,296 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Tramites.aspx.cs" Inherits="Tramites" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div id="contenedor" >
+        <div id="Con_izq" style="background:green;">
+            <div id="acciones">
+                <img src="assets/img/ico_menu.png" alt="Abrir menu" class="menu-bar" id="menuico" />
+                <div id="botoneraOpciones">
+                <button type="button" id="btnAgregar" class="button" style="width: 32px; height: 32px; border-radius: 5px;">
+                    <img src="assets/img/btn_agregar.png" alt="AGREGAR" id="menuico" />
+                </button>
+                <button type="button" id="btnModificar" class="button" style="width: 32px; height: 32px; border-radius: 5px;">
+                    <img src="assets/img/btn_modificar.png" alt="MODIFICAR" id="menuico" />
+                </button>
+                <button type="button" id="btnEliminar" class="button" style="width: 32px; height: 32px; border-radius: 5px;">
+                    <img src="assets/img/btn_aliminar.png" alt="ELIMINAR" id="menuico" />
+                </button>
+                <button type="button" id="btnAplicar" class="button" style="width: 32px; height: 32px; border-radius: 5px;">
+                    <img src="assets/img/btn_buscar.png" alt="LIMPIAR" id="menuico" />
+                </button>
+                <button type="button" id="btnBuscar" class="button" style="width: 32px; height: 32px; border-radius: 5px;">
+                    <img src="assets/img/btn_aceptar.png" alt="LIMPIAR" id="menuico" />
+                </button>
+                <button type="button" id="btnCancelar" class="button" style="width: 32px; height: 32px; border-radius: 5px;">
+                    <img src="assets/img/btn_cancelar.png" alt="LIMPIAR" id="menuico" />
+                </button>
+                </div>
+            </div>
+        </div>
+        <div id="Con_der" style="background:red;"></div>
+    </div>
+
+
+   <div>
+        <fieldset>
+            <legend>
+                MOVIMIENTO
+            </legend>
+                <div>
+    <table style="width: 100%">
+        <tr>
+            <td>
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="2" class="auto-style2">
+                            <label >TIPO MOVIMIENTO:</label>
+                            <select class="custom-select" id="input3" style="width:100%">
+                                <option selected="">Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2">
+                            <label >FECHA:</label>
+                            <input type="text">
+                        </td>
+                        <td style="text-align: right">
+                            <label >A�O:</label>
+                            <input type="text">
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+            <td>
+                <table style="width:100%">
+                    <tr>
+                        <td>
+                            <label >CUENTA:</label>
+                            <input type="text">
+                        </td>
+                        <td style="text-align: right">
+                            <label >CLAVE CATASTRAL:</label>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label >EFECTOS:</label>
+                            <input type="text">
+                        </td>
+                        <td style="text-align: right">
+                            <label >A�O:</label>
+                            <input type="text">
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+        </fieldset>
+        </div>
+    <hr />
+   
+     <table style="width: 100%;">
+        <tr>
+            <td style="width: 50%;">
+                <fieldset>
+                    <legend>
+                        DATOS REGISTRALES
+                    </legend>
+                    <div>
+                        <table style="width:100%">
+                            <tr style="width:50%">
+                                <td>
+                                   <label >CTA.ANT:</label>
+                                    <select class="custom-select" id="input2">
+                                    <option selected="">Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label >CTA.CAT.ANT:</label>
+                                    <input type="text" />
+                                </td>
+                            </tr>
+                             <tr style="width:50%">
+                                <td>
+                                    <label >MUNICIPIO:</label>
+                                    <input type="text" />
+                                    </select>
+                                </td>
+                                <td>
+                                    <label ></label>
+                                    <input type="text" />
+                                </td>
+                            </tr>
+                        </table>                   
+                    </div>
+                </fieldset>
+            </td>
+            <td style="width: 50%;">
+                <fieldset>
+                    <fieldset>
+                        <legend>
+                            DATOS DE NOTIFICACION
+                            <input type="checkbox">
+                            <label>MISMO</label>
+                        </legend>
+                        <div>
+                            <table style="width: 100%">
+                                <tr>
+                                    <td>
+                                        <label>CALLE:</label>
+                                        <input type="text">
+                                    </td>
+                                    <td colspan="3">
+                                        <input type="text" style="width: 100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>COLONIA:</label>
+                                        <input type="text">
+                                    </td>
+                                    <td colspan="3">
+                                        <input type="text" style="width: 100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>INTERIOR</label>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <label>EXTERIOR</label>
+                                        <input type="text">
+                                    </td>
+                                    <td COLSPAN="2">
+                                        <label>CP</label>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        <label>MOTIVO DE NO ENCONTRADO</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="1">
+                                        <input type="text">
+                                    </td>
+                                    <td colspan="3">
+                                        <input type="text" style="width: 100%">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            DATOS TECNICOS
+                        </legend>
+                        <div>
+                            <table style="width: 100%">
+                                <tr>
+                                    <td>
+                                        <label>S AREA TERRENO</label>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <label>VAL CONTRUCCION</label>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>VAL TERR M2</label>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <label>VAL CATASTRAL</label>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>VAL TERR</label>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <label>TIPO PREDIO</label>
+                                                    <input type="text">
+                                                </td>
+                                                <td>
+                                                    <label>BALDIO</label>
+                                                    <input type="checkbox">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>S AREA CONSTRUCT</label>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <label>TASA</label>
+                                        <select name="" id="">
+                                            <option value="">selecicone una</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>VAL CONST M2</label>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <label>TRASLADO DE DOMINIO</label>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <textarea name="" id="" cols="30" rows="10" style="width: 100%"></textarea>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </fieldset>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+
+    <style>
+        .custom-select {
+          width:inherit;
+        }
+        .active{
+            width:216px;
+        }
+        .th{
+        border:dotted;
+        }
+        .auto-style2 {
+            width: 139px;
+        }
+    </style>
+</asp:Content>
+
